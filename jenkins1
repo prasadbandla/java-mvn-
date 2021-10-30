@@ -1,8 +1,5 @@
 pipeline {
-       tools{
-           maven 'maven'
-           }
-         stage('Build') {
+       stage('Build') {
             steps {
             sh "mvn --version"
             sh "echo $PATH"
