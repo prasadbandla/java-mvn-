@@ -1,8 +1,12 @@
 pipeline {
+       tools{
+           maven 'maven'
+           }
          stage('Build') {
             steps {
+            sh "mvn --version"
             sh "echo $PATH"
-                sh "mvn clean install"
+            sh "mvn clean install"
             }
         }
        }
