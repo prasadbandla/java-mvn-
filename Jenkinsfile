@@ -2,6 +2,21 @@ pipeline {
     agent {
         label 'agent1'
     }
+
+
+
+
+
+
+
+
+
+
+
+/*pipeline {
+    agent {
+        label 'agent1'
+    }
     tools {
         maven 'maven'
     }
@@ -99,3 +114,4 @@ pipeline {
         }
 */
 }
+*/
