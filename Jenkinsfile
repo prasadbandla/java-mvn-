@@ -6,21 +6,13 @@ pipeline {
                 checkout scm
             }
         }
-        stage('build') {
+        stage('Build') {
             steps {
                 sh "mvn clean install"
             }
         }
     }
-  }
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -100,7 +92,7 @@ pipeline {
             }
    }
 }
-/*    post {
+   post {
         always {
             deleteDir()
         }
@@ -111,10 +103,10 @@ pipeline {
             echo "The job is successful"
         }
     }
-    */
+    
 
 
-/*
+
         stage('Deploy') {
             steps {
                 echo "Deploying to Dev Environment"
@@ -123,6 +115,6 @@ pipeline {
                 }
             }
         }
-*/
+
 }
 */
